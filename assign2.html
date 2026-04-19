@@ -1,15 +1,119 @@
-<html> 
-  <head><title> Jacky Yuan's Homepage</title>
-<link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
-    <body> 
-      
-      <div> 
-      <img src="https://resizing.flixster.com/Q38oAHAOYArzZEuJt0s45VAZoy8=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10488558_p_v12_ai.jpg" alt="Official Whiplash movie poster showing a drum set">  
-      <h1> Whipsplash </h1>
-      </div>
-      
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 2 - Iron Man Movie Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
+    <style>
+        body { 
+            background-color: #401B1B; 
+            color: white; 
+            font-family: sans-serif; 
+            text-align: center; 
+            padding: 40px 0; 
+            margin: 0; 
+        }
+        
+        h1, h2 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 15px 0; }
+        p { color: #BFAC73; font-size: 20px; line-height: 1.6; max-width: 800px; margin: 10px auto; }
 
-  
+        
+        #navbar {
+            width: 90%;
+            margin: 0 auto 20px auto;
+            background-color: #2D1414;
+            padding: 15px;
+            border: 2px solid #BFAC73;
+            border-radius: 10px;
+        }
+
+        #navbar a {
+            color: white;
+            font-family: 'Racing Sans One', sans-serif;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        #navbar a:hover {
+            text-decoration: underline;
+            color: #BFAC73;
+        }
+
+        .movie-box {
+            width: 90%; 
+            margin: 0 auto 40px auto; 
+            padding: 40px;
+            background-color: #2D1414; 
+            border: 3px solid #BFAC73;
+            border-radius: 20px; 
+            box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
+        }
+
+        
+        .logo-img { width: 250px; margin-bottom: 20px; }
+        .char-img { height: 300px; border-radius: 12px; margin: 20px 0; }
+
+        
+        .poster-container {
+            display: flex;
+            flex-direction: row;    
+            justify-content: center; 
+            align-items: flex-end;  
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: nowrap;      
+        }
+
+        .poster-img {
+            width: 250px;
+            height: auto;
+            border-radius: 10px;
+            border: 2px solid #BFAC73;
+        }
+
+        ul { list-style-position: inside; text-align: left; display: inline-block; color: #BFAC73; font-size: 18px; }
+        a { color: white; font-weight: bold; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <div id="navbar">
+        <a href="index.html">Home</a>
+        <a href="assign1.html">Characters</a>
+        <a href="assign2.html">Movie Facts</a>
+        <a href="albums.html">Albums</a>
+    </div>
+
+    <div class="movie-box">
+        <h1>Iron Man Movie Profile</h1>
+        <!-- Original image source remains unchanged as per "don't care about images" -->
+        <img src="Cars3.webp" alt="Iron Man Logo" class="logo-img">
+        
+        <p>
+            Iron Man follows Tony Stark, a billionaire inventor and genius engineer, whose life changes forever 
+            after being captured by terrorists. Forced to build a devastating weapon, he instead creates a 
+            high-tech suit of armor to escape. Returning home, Tony perfects the revolutionary Iron Man armor 
+            and uses his new powers to protect the world. With the help of his loyal ally Pepper Potts, 
+            friend Lt. Colonel James "Rhodey" Rhodes, and inspiration from his father's legacy, he becomes 
+            a hero unlike any other.
+        </p>
+
+        <div class="poster-container">
+            <!-- Images are left as original; only alt text updated for Iron Man theme -->
+            <img src="cars1.webp" alt="Iron Man (2008) Poster" class="poster-img">
+            <img src="cars2.webp" alt="Iron Man 2 Poster" class="poster-img">
+            <img src="cars3assign2.jpg" alt="Iron Man 3 Poster" class="poster-img">
+        </div>
+
+        <h2>Fast Facts</h2>
+        <ul>
+            <li>Release Date: May 2, 2008</li>
+            <li>Director: Jon Favreau</li>
+            <li>Music by: Ramin Djawadi</li>
+            <li>Box Office: $585.8 Million</li>
+        </ul>
+    </div>
+
+</body>
 </html>
-
