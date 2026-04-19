@@ -1,6 +1,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 2 - Iron Man Movie Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap" rel="stylesheet">
     <style>
@@ -14,9 +15,8 @@
         }
         
         h1, h2 { font-family: 'Racing Sans One', sans-serif; color: #A62D37; margin: 15px 0; }
-        p { color: #BFAC73; font-size: 20px; line-height: 1.6; max-width: 800px; margin: 10px auto; }
+        p { color: #BFAC73; font-size: 20px; line-height: 1.6; max-width: 800px; margin: 10px auto; padding: 0 20px; }
 
-        
         #navbar {
             width: 90%;
             margin: 0 auto 20px auto;
@@ -42,75 +42,87 @@
         .movie-box {
             width: 90%; 
             margin: 0 auto 40px auto; 
-            padding: 40px;
+            padding: 40px 20px;
             background-color: #2D1414; 
             border: 3px solid #BFAC73;
             border-radius: 20px; 
             box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
+            box-sizing: border-box; /* Ensures padding doesn't break width */
         }
 
-        
-        .logo-img { width: 250px; margin-bottom: 20px; }
-        .char-img { height: 300px; border-radius: 12px; margin: 20px 0; }
+        .logo-img { width: 100%; max-width: 250px; margin-bottom: 20px; height: auto; }
 
-        
         .poster-container {
             display: flex;
             flex-direction: row;    
             justify-content: center; 
-            align-items: flex-end;  
+            align-items: flex-start;  
             gap: 15px;
             margin-top: 20px;
-            flex-wrap: nowrap;      
+            flex-wrap: wrap; /* Allows posters to wrap on smaller screens */
         }
 
         .poster-img {
-            width: 250px;
+            width: 200px; /* Reduced slightly for better fit */
             height: auto;
             border-radius: 10px;
             border: 2px solid #BFAC73;
         }
 
-        ul { list-style-position: inside; text-align: left; display: inline-block; color: #BFAC73; font-size: 18px; }
-        a { color: white; font-weight: bold; text-decoration: none; }
-        .movie-box a:not(#navbar a) { text-decoration: underline; }
+        ul { 
+            list-style-position: inside; 
+            text-align: left; 
+            display: inline-block; 
+            color: #BFAC73; 
+            font-size: 18px; 
+            padding: 0;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .poster-img {
+                width: 140px;
+            }
+            #navbar a {
+                display: block;
+                margin: 10px 0;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <div id="navbar">
+    <nav id="navbar">
         <a href="index.html">Home</a>
         <a href="assign1.html">Characters</a>
         <a href="assign2.html">Movie Facts</a>
-    </div>
+    </nav>
 
-    <div class="movie-box">
+    <main class="movie-box">
         <h1>Iron Man Movie Profile</h1>
-        <img src="https://posterspy.com/wp-content/uploads/2018/11/Iron-Man-18x24-Mark-III-small-1.jpg" alt="Iron Man Logo" class="logo-img">
+        <img src="https://posterspy.com/wp-content/uploads/2018/11/Iron-Man-18x24-Mark-III-small-1.jpg" alt="Iron Man Mark III Armor" class="logo-img">
         
         <p>
             Iron Man follows Tony Stark, a billionaire inventor and genius engineer, whose life changes forever 
             after being captured by terrorists. Forced to build a devastating weapon, he instead creates a 
             high-tech suit of armor to escape. Returning home, Tony perfects the revolutionary Iron Man armor 
-            and uses his new powers to protect the world. With the help of his loyal ally Pepper Potts, 
-            friend Lt. Colonel James "Rhodey" Rhodes, and inspiration from his father's legacy, he becomes 
-            a hero unlike any other.
+            and uses his new powers to protect the world.
         </p>
 
         <div class="poster-container">
-            <img src="https://www.movieposters.com/cdn/shop/products/00eaba84a5fa89f5c39757b0f0930f18_b7ee0aba-3bc5-49ef-80a7-00e2467f2509_1024x1024.jpg?v=1762491315" alt="Iron Man (2008) Poster" class="poster-img">
+            <img src="https://www.movieposters.com/cdn/shop/products/00eaba84a5fa89f5c39757b0f0930f18_b7ee0aba-3bc5-49ef-80a7-00e2467f2509_1024x1024.jpg?v=1762491315" alt="Iron Man 1 Poster" class="poster-img">
             <img src="https://m.media-amazon.com/images/I/71VZVXPhmKL._AC_UF894,1000_QL80_.jpg" alt="Iron Man 2 Poster" class="poster-img">
             <img src="https://m.media-amazon.com/images/I/8159UW0-AEL.jpg" alt="Iron Man 3 Poster" class="poster-img">
         </div>
-        <h2>Fast Facts about Iron Man Series</h2>
-        <h2>Fast Facts about Iron Series</h2>
+
+        <h2>Fast Facts</h2>
         <ul>
-            <li>Release Date: May 2, 2008</li>
-            <li>Director: Jon Favreau</li>
-            <li>Music by: Ramin Djawadi</li>
-            <li>Box Office: $585.8 Million</li>
+            <li><strong>Release Date:</strong> May 2, 2008</li>
+            <li><strong>Director:</strong> Jon Favreau</li>
+            <li><strong>Music by:</strong> Ramin Djawadi</li>
+            <li><strong>Box Office:</strong> $585.8 Million</li>
         </ul>
-    </div>
+    </main>
 
 </body>
 </html>
