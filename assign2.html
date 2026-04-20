@@ -47,7 +47,7 @@
             border: 3px solid #BFAC73;
             border-radius: 20px; 
             box-shadow: 12px 12px 25px rgba(0,0,0,0.7);
-            box-sizing: border-box; /* Ensures padding doesn't break width */
+            box-sizing: border-box;
         }
 
         .logo-img { width: 100%; max-width: 250px; margin-bottom: 20px; height: auto; }
@@ -59,11 +59,11 @@
             align-items: flex-start;  
             gap: 15px;
             margin-top: 20px;
-            flex-wrap: wrap; /* Allows posters to wrap on smaller screens */
+            flex-wrap: wrap; 
         }
 
         .poster-img {
-            width: 200px; /* Reduced slightly for better fit */
+            width: 200px;
             height: auto;
             border-radius: 10px;
             border: 2px solid #BFAC73;
@@ -78,7 +78,7 @@
             padding: 0;
         }
 
-        /* Responsive adjustments */
+     
         @media (max-width: 600px) {
             .poster-img {
                 width: 140px;
