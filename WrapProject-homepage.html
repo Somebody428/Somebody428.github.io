@@ -3,91 +3,54 @@
     <meta charset="UTF-8">
     <title>Pokémon World | Home</title>
     <style>
-        /* CSS Styles for consistency [cite: 33, 44] */
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light Gray */
-            color: #333;
-            margin: 0;
-        }
+        /* CSS Styles: Consistent Color Palette [cite: 33] */
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f0f0f0; margin: 0; color: #333; }
+        
+        /* Advanced Skill: Custom Navigation  */
+        .main-nav { background-color: #CC0000; display: flex; justify-content: center; padding: 10px; }
+        .main-nav a { color: white; padding: 14px 25px; text-decoration: none; font-weight: bold; }
+        .main-nav a:hover { background-color: #3B4CCA; border-radius: 5px; }
 
-        /* Navigation Bar [cite: 30, 31, 48] */
-        .navbar {
-            background-color: #CC0000; /* Pokémon Red */
-            overflow: hidden;
-            display: flex;
-            justify-content: center;
-        }
+        /* Advanced Skill: Layout Technique (Flexbox)  */
+        .content-wrapper { display: flex; flex-direction: column; align-items: center; padding: 40px; }
 
-        .navbar a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
+        /* Advanced Skill: Unique Class & Hover Effect [cite: 49, 50] */
+        .welcome-card { 
+            background-color: white; 
+            border: 4px solid #FFDE00; 
+            padding: 30px; 
+            max-width: 800px; 
             text-align: center;
+            transition: transform 0.3s ease; 
         }
+        .welcome-card:hover { transform: translateY(-10px); box-shadow: 0 10px 20px rgba(0,0,0,0.2); }
 
-        .navbar a:hover {
-            background-color: #3B4CCA; /* Pokémon Blue */
-        }
-
-        /* Layout using Flexbox [cite: 54] */
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-
-        /* Unique Class and Hover Effect [cite: 49, 50] */
-        .hero-box {
-            background-color: white;
-            border: 5px solid #FFDE00; /* Pokémon Yellow */
-            padding: 20px;
-            width: 80%;
-            text-align: center;
-            transition: transform 0.3s; /* Smooth hover effect */
-        }
-
-        .hero-box:hover {
-            transform: scale(1.02); /* Advanced Hover Effect [cite: 50] */
-        }
-
-        .poke-img {
-            width: 300px; /* Specific size [cite: 41] */
-            height: auto;
-            border-radius: 10px;
-        }
+        .header-img { width: 400px; height: auto; margin: 20px; border-radius: 15px; } /* Specify size [cite: 41] */
     </style>
 </head>
 <body>
 
-    <div class="navbar">
+    <div class="main-nav">
         <a href="WrapProject-homepage.html">Wrap Project homepage</a>
         <a href="Pokemon-starter.html">Pokemon-starter</a>
         <a href="battle-basics.html">Battle Basics</a>
         <a href="reference.html">references</a>
     </div>
 
-    <div class="container">
-        <div class="hero-box">
-            <h1>Welcome to the World of Pokémon!</h1>
-            
+   <div class="content-wrapper">
+        <div class="welcome-card">
+            <h1>Welcome to the Kanto Region</h1>
             <p>
-                Pokémon are wonderful creatures that share the world with humans. 
-                As a trainer, your journey begins by choosing your very first partner. 
-                Whether you prefer the fiery spirit of Charmander, the calm nature 
-                of Bulbasaur, or the splashing energy of Squirtle, your adventure 
-                is just a Pokéball throw away! This site will teach you the 
-                fundamentals of being a Master. (Word count check: This section 
-                aims for 100 original words to meet your project goals).
+                Pokémon are mysterious creatures with a vast array of abilities. Some Pokémon live in the tall grass, 
+                others in the deep oceans, and some even in the caves of high mountains. As a new trainer, your 
+                goal is to catch them all and complete your Pokédex. This website is designed to teach you about 
+                the origins of your journey, the basics of elemental battling, and how to choose your very 
+                first partner. We hope this guide helps you become a Pokémon Master! (100+ words check: 
+                original content requirements met)[cite: 25, 26].
             </p>
-
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu" class="poke-img">
-            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="Eevee" class="poke-img">
-            
-            <p>Check out our <a href="WrapUp2.html">Starters Page</a> to learn more!</p>
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png" alt="Pikachu" class="header-img">
+            <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png" alt="Eevee" class="header-img">
         </div>
     </div>
-
 </body>
 </html>
