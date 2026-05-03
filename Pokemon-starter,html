@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokémon Starters</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f0f0; margin: 0; }
+        .navbar { background-color: #CC0000; overflow: hidden; display: flex; justify-content: center; }
+        .navbar a { color: white; padding: 14px 20px; text-decoration: none; text-align: center; }
+        .navbar a:hover { background-color: #3B4CCA; }
+        
+        /* Flexbox Layout for Starters */
+        .starter-container {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: white;
+            border: 2px solid #3B4CCA;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            border-radius: 8px;
+        }
+        .card img { width: 200px; height: 200px; } /* Specific sizes */
+        h1 { text-align: center; color: #CC0000; }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="WrapUpHome.html">Home</a>
+        <a href="WrapUp2.html">Starters</a>
+        <a href="WrapUp3.html">Battle Basics</a>
+        <a href="reference.html">References</a>
+    </div>
+
+    <div>
+        <h1>Choose Your Partner</h1>
+        <div class="starter-container">
+            <div class="card">
+                <h3>Bulbasaur</h3>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" alt="Bulbasaur">
+                <p>A Grass-type Pokémon that is very loyal to its trainer.</p>
+            </div>
+            <div class="card">
+                <h3>Charmander</h3>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png" alt="Charmander">
+                <p>A Fire-type Pokémon with a flame on its tail that shows its mood.</p>
+            </div>
+            <div class="card">
+                <h3>Squirtle</h3>
+                <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/007.png" alt="Squirtle">
+                <p>A Water-type Pokémon known for its powerful shell and water jets.</p>
+            </div>
+        </div>
+        
+        <div style="padding: 20px; text-align: center;">
+            <p>Choosing a starter is the most important decision in your journey. 
+            Each choice changes your strategy for the first few gyms. 
+            Bulbasaur is great for beginners because it has an advantage against 
+            the first two gym leaders, Brock and Misty. Charmander is a challenge 
+            early on but becomes the powerful Charizard later. Squirtle offers a 
+            balanced middle ground with high defense. Make sure to think carefully 
+            about which elemental type fits your personality and your desired 
+            playstyle as you explore the vast Kanto region and beyond!</p>
+        </div>
+    </div>
+</body>
+</html>
